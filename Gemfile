@@ -37,4 +37,4 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 #
-gem "codeclimate-test-reporter", group: :test
+gem "codeclimate-test-reporter", group: :test, path: "/Users/njero/Projects/codeclimate/ruby-test-reporter"
