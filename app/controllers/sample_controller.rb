@@ -36,4 +36,8 @@ class SampleController < ApplicationController
     super(attr_name, *args)
   end
   # :nocov:
+
+  def chicken
+    render text: "bar"
+  end
 end
