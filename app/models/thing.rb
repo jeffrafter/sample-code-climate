@@ -11,7 +11,7 @@ class Thing
   #  # Only available in ruby 2.0
   #end
 
-  def complex
+  def complex(attribute_key_name, args)
     things.each do |thing|
       next if things.other.nil?
       thing.thing_roles.each do |thing_role|
@@ -32,9 +32,9 @@ class Thing
       attr_name = "name"
     end
 
-    return if things.length > (crazy_thing ? 1 : things.max { |thing| thing.number - crazy_thing.number })
+    return true if things.length > (!crazy_thing ? 1 : things.max { |thing| thing.number - crazy_thing.number })
 
-    super(attr_name, *args)
+    nil
   end
 
   def duplicate
