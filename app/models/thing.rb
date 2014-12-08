@@ -7,9 +7,9 @@ class Thing
     nil
   end
 
-  def keyword(thing_name: 1)
-    # Only available in ruby 2.0
-  end
+  #def keyword(thing_name: 1)
+  #  # Only available in ruby 2.0
+  #end
 
   def complex
     things.each do |thing|

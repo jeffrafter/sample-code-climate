@@ -37,4 +37,19 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 #
+
+group :test do
+  # Make our specs watchable with beautiful progress bar
+  gem 'guard-rspec'
+  gem 'fuubar'
+end
+
+group :test, :development do
+  # Get specs involved in this process
+  gem 'rspec-rails', '~> 3.0.0'
+  gem "shoulda-matchers"
+  gem "factory_girl_rails"
+end
+
+
 gem "codeclimate-test-reporter", group: :test, path: "/Users/njero/Projects/codeclimate/ruby-test-reporter"
