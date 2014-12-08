@@ -1,9 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-  before_action do
-    permit_params
-  end
+  before_action :permit_params
 
   private
 
