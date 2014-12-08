@@ -44,4 +44,9 @@ class SampleController < ApplicationController
   def cat
     render text: 'Bird'
   end
+
+  def fish
+    render text: 'Abraham'
+  end
+
 end
